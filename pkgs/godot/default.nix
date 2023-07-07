@@ -5,8 +5,8 @@
   fetchurl,
   unzip,
   udev, fontconfig,
-  alsaLib, libXcursor, libXinerama, libXrandr, libXrender, libX11, libXi, libXext, libxcb,
-  libpulseaudio, libGL,
+  alsaLib, libXcursor, libXinerama, libXrandr, libXrender, libX11, libXi, libXext, libxcb, libXfixes,
+  libpulseaudio, libGL, vulkan-loader
 }:
 
 let
@@ -29,12 +29,14 @@ stdenv.mkDerivation rec {
     udev
     udev
     alsaLib
+    vulkan-loader
     libXcursor
     libXinerama
     libXrandr
     libXrender
     libX11
     libXi
+    libXfixes
     libXext
     libxcb
     libpulseaudio
