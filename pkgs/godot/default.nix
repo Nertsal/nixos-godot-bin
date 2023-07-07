@@ -15,11 +15,11 @@ in
 
 stdenv.mkDerivation rec {
   pname = "godot-bin";
-  version = "3.5.1";
+  version = "4.1";
 
   src = fetchurl {
-    url = "https://downloads.tuxfamily.org/godotengine/${version}/Godot_v${version}-${qualifier}_x11.64.zip";
-    sha256 = "kl5HGjL2mjxWktfubJXan/l7bmZu562VmD8iO6rQ4H0=";
+    url = "https://downloads.tuxfamily.org/godotengine/${version}/Godot_v${version}-${qualifier}_linux.x86.64.zip";
+    sha256 = "2X3Zbhf4Vz74ptru9cNycgMUjhS/JG1ig7Qu9GxyW5U=";
   };
 
   nativeBuildInputs = [autoPatchelfHook makeWrapper unzip];
