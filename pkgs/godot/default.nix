@@ -4,7 +4,7 @@
   makeWrapper,
   fetchurl,
   unzip,
-  udev, fontconfig,
+  udev, fontconfig, dbus,
   alsaLib, libXcursor, libXinerama, libXrandr, libXrender, libX11, libXi, libXext, libxcb, libXfixes,
   libpulseaudio, libGL, vulkan-loader
 }:
@@ -26,7 +26,8 @@ stdenv.mkDerivation rec {
 
   buildInputs = [
     fontconfig
-    udev
+    dbus
+    dbus.lib
     udev
     alsaLib
     vulkan-loader
