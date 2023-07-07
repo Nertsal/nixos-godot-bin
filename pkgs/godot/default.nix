@@ -42,7 +42,7 @@ stdenv.mkDerivation rec {
   unpackCmd = "unzip $curSrc -d source";
   installPhase = ''
     mkdir -p $out/bin
-    install -m 0755 Godot_v${version}-${qualifier}_x11.64 $out/bin/godot
+    install -m 0755 Godot_v${version}-${qualifier}_linux.x86_64 $out/bin/godot
   '';
 
   postFixup = ''
