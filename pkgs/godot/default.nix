@@ -4,8 +4,8 @@
   makeWrapper,
   fetchurl,
   unzip,
-  udev,
-  alsaLib, libXcursor, libXinerama, libXrandr, libXrender, libX11, libXi,
+  udev, fontconfig,
+  alsaLib, libXcursor, libXinerama, libXrandr, libXrender, libX11, libXi, libXext, libxcb,
   libpulseaudio, libGL,
 }:
 
@@ -25,6 +25,8 @@ stdenv.mkDerivation rec {
   nativeBuildInputs = [autoPatchelfHook makeWrapper unzip];
 
   buildInputs = [
+    fontconfig
+    udev
     udev
     alsaLib
     libXcursor
@@ -33,6 +35,8 @@ stdenv.mkDerivation rec {
     libXrender
     libX11
     libXi
+    libXext
+    libxcb
     libpulseaudio
     libGL
   ];
