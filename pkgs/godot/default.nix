@@ -18,7 +18,7 @@ stdenv.mkDerivation rec {
   version = "4.1";
 
   src = fetchurl {
-    url = "https://downloads.tuxfamily.org/godotengine/${version}/Godot_v${version}-${qualifier}_linux.x86.64.zip";
+    url = "https://downloads.tuxfamily.org/godotengine/${version}/Godot_v${version}-${qualifier}_linux.x86_64.zip";
     sha256 = "2X3Zbhf4Vz74ptru9cNycgMUjhS/JG1ig7Qu9GxyW5U=";
   };
 
