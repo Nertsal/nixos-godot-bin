@@ -5,7 +5,7 @@
   fetchurl,
   unzip,
   udev, fontconfig, dbus,
-  alsaLib, libXcursor, libXinerama, libXrandr, libXrender, libX11, libXi, libXext, libxcb, libXfixes,
+  alsaLib, libXcursor, libXinerama, libXrandr, libXrender, libX11, libXi, libXext, libxcb, libxkbcommon, libXfixes,
   libpulseaudio, libGL, vulkan-loader
 }:
 
@@ -40,6 +40,7 @@ stdenv.mkDerivation rec {
     libXfixes
     libXext
     libxcb
+    libxkbcommon
     libpulseaudio
     libGL
   ];
