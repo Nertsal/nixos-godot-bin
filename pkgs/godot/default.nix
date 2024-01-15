@@ -19,7 +19,7 @@ stdenv.mkDerivation rec {
 
   src = fetchurl {
     url = "https://downloads.tuxfamily.org/godotengine/${version}/Godot_v${version}-${qualifier}_linux.x86_64.zip";
-    sha256 = "CnAAtG8+LKzdEezOF22Pv+I9VZka60TAJDXaKp7pmio=";
+    sha256 = "hjEannW3RF60IVMS5gTfH2nHLUZBrz5nBJ4wNWrjdmA=";
   };
 
   nativeBuildInputs = [autoPatchelfHook makeWrapper unzip];
