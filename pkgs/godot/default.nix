@@ -15,7 +15,7 @@ in
 
 stdenv.mkDerivation rec {
   pname = "godot-bin";
-  version = "4.1";
+  version = "4.2.1";
 
   src = fetchurl {
     url = "https://downloads.tuxfamily.org/godotengine/${version}/Godot_v${version}-${qualifier}_linux.x86_64.zip";

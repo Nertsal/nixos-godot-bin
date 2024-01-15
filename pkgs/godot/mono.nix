@@ -12,7 +12,7 @@ in
 
 godotBin.overrideAttrs (oldAttrs: rec {
   pname = "godot-mono-bin";
-  version = "3.5.1";
+  version = "4.2.1";
 
   src = fetchurl {
     url = "https://downloads.tuxfamily.org/godotengine/${version}/mono/Godot_v${version}-${qualifier}_mono_x11_64.zip";
